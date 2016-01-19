@@ -165,7 +165,7 @@ namespace ass5.Model
         {
             List<user> ans = new List<user>();
 
-            string insert = "SELECT * FROM [teacherStudent] WHERE [teacherId]=" + teacher;
+            string insert = "SELECT [studentId] FROM [dbo].[teacheStudent] WHERE [teacherId]=" + teacher;
             SqlConnection connect = getConnection();
             SqlCommand command = new SqlCommand(insert, connect);
 

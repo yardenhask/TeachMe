@@ -21,6 +21,7 @@ namespace ass5.View
     /// </summary>
     public partial class addMaterial : Window
     {
+        string sFileName;
         private class Item
         {
             public string first;
@@ -48,11 +49,11 @@ namespace ass5.View
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog f = new OpenFileDialog();
-            f.Filter = "Data Sources (*.txt, *.doc)| All Files|*.*";
+            f.Filter = " All Files|*.*";
             if (f.ShowDialog() == true)
             {
-                string sFileName = f.FileName;
-                c.addNewAssigment(sFileName, "yarden", teacherLogin);
+                sFileName = f.FileName;
+         //       c.addNewAssigment(sFileName, "yarden", teacherLogin); button upload
             }
         }
     }
