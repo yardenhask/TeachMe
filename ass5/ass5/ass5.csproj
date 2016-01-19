@@ -164,6 +164,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>TeachMeDB.mdf</DependentUpon>
     </Content>
+    <Resource Include="pictures\background.png" />
     <Resource Include="pictures\teachme.jpg" />
   </ItemGroup>
   <ItemGroup>
