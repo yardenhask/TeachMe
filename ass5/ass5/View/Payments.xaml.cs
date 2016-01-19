@@ -37,17 +37,17 @@ namespace ass5.View
 
         private void Payment_Request_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("payment request opened");
         }
 
         private void Pay_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("payment confirmed");
         }
 
         private void Create_coupon_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show(" copun created");
         }
     }
 }

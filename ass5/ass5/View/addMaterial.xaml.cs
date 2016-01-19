@@ -37,6 +37,7 @@ namespace ass5.View
         controler c;
         public addMaterial(string t, controler c)
         {
+            this.c = c;
             InitializeComponent();
             teacherLogin = t;
             List<user> students = c.findStudents(t);

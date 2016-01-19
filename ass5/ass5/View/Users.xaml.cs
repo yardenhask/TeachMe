@@ -37,17 +37,17 @@ namespace ass5.View
 
         private void Update_User_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("user updated");
         }
 
         private void Delete_User_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("user deleted");
         }
 
         private void Techer_Management_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("teacher managment opend");
         }
     }
 }

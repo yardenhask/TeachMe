@@ -43,22 +43,22 @@ namespace ass5.View
 
         private void Add_Solution_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("solution was added");
         }
 
         private void Add_Material_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("add metirial");
         }
 
         private void Retrieval_Material_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("matrial retrieved");
         }
 
         private void Delete_Material_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("metrial deleted");
         }
     }
 }

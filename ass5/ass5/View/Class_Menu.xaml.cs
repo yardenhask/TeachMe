@@ -38,27 +38,27 @@ namespace ass5.View
 
         private void Open_Lesson_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Lesson opened");
         }
 
         private void Add_Student_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("student added");
         }
 
         private void Delete_Lesson_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("lesson deleted");
         }
 
         private void OnLine_Lesson_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("online lesson was added");
         }
 
         private void Close_Lesson_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("lesson closed");
         }
     }
 }
