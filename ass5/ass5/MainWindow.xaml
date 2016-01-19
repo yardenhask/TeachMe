@@ -3,129 +3,155 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow"
         Width="525"
-        Height="350">
+        Height="380">
     <Grid>
-        <Canvas RenderTransformOrigin="0.814,0.544">
+        <Canvas>
             <Canvas.Background>
-                <ImageBrush ImageSource="pictures/teachme.jpg" />
+                <ImageBrush ImageSource="pictures/background.png" />
             </Canvas.Background>
-            <Image Width="100" Height="100" />
+            <Canvas Name="right"
+                    Canvas.Top="100"
+                    Canvas.Right="20"
+                    Width="210"
+                    Height="200">
+                <Canvas.Background>
+                    <SolidColorBrush Opacity="0.2" Color="#FF7A0620" />
+                </Canvas.Background>
 
+            </Canvas>
 
+            <Canvas Name="left"
+                    Canvas.Left="25"
+                    Canvas.Top="110"
+                    Width="200"
+                    Height="120"
+                    ClipToBounds="True">
+                <Canvas.Background>
+                    <SolidColorBrush Opacity="0.2" Color="#FF7A0620" />
+                </Canvas.Background>
 
+            </Canvas>
             <Button Name="Exit"
-                    Canvas.Left="21"
-                    Canvas.Top="274"
-                    Width="59"
-                    Click="Exit_Click"
-                    Content="Exit" />
+                    Canvas.Left="30"
+                    Canvas.Top="276"
+                    Width="70"
+                    Height="30"
+                    Click="Exit_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="pictures/exit.png" />
+                </Button.Background>
+            </Button>
             <TextBlock Canvas.Left="50"
-                       Canvas.Top="87"
+                       Canvas.Top="134"
                        Text="User ID" />
-            <TextBlock Canvas.Left="59"
-                       Canvas.Top="108"
+            <TextBlock Canvas.Left="50"
+                       Canvas.Top="162"
                        Text="Password" />
+
+            <Canvas Name="title"
+                    Canvas.Left="100"
+                    Canvas.Top="0"
+                    Width="300"
+                    Height="95">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="pictures/TeachMeU.png" />
+                </Canvas.Background>
+            </Canvas>
 
             <TextBox Name="username_text"
                      Canvas.Left="126"
-                     Canvas.Top="87"
+                     Canvas.Top="129"
                      Width="81" />
             <TextBox Name="Password_text"
                      Canvas.Left="126"
-                     Canvas.Top="109"
+                     Canvas.Top="157"
                      Width="81" />
             <Button Name="Log_In"
                     Canvas.Left="126"
-                    Canvas.Top="152"
-                    Width="81"
-                    Height="28"
-                    Click="Log_In_Click"
-                    Content="Log In" />
-            <TextBlock Name="Header"
-                       Canvas.Left="174"
-                       Canvas.Top="10"
-                       FontSize="40"
-                       Text="TeachMe" />
-            <TextBlock Name="Phone"
-                       Canvas.Left="248"
-                       Canvas.Top="185"
-                       Text="Phone number" />
+                    Canvas.Top="193"
+                    Width="70"
+                    Height="30"
+                    Click="Log_In_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="pictures/login.png" />
+                </Button.Background>
+            </Button>
+
             <Button Name="Add_User"
-                    Canvas.Left="250"
-                    Canvas.Top="271"
-                    Width="81"
-                    Height="28"
-                    Click="Add_User_Click"
-                    Content="Add new user" />
-            <TextBlock Name="new_userName"
-                       Canvas.Left="255"
-                       Canvas.Top="81"
-                       Text="User Name" />
-            <TextBlock Name="new_password"
-                       Canvas.Left="258"
-                       Canvas.Top="109"
-                       Text="Password" />
+                    Canvas.Left="187"
+                    Canvas.Top="260"
+                    Width="90"
+                    Height="40"
+                    Click="Add_User_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="pictures/adduser.png" />
+                </Button.Background>
+            </Button>
+            <TextBlock Name="FUll_name"
+                       Canvas.Left="289"
+                       Canvas.Top="175"
+                       Text="FUll Name" />
             <TextBlock Name="Id"
-                       Canvas.Left="258"
-                       Canvas.Top="153"
+                       Canvas.Left="302"
+                       Canvas.Top="110"
                        Text="ID number" />
+            <TextBlock Name="new_password"
+                       Canvas.Left="302"
+                       Canvas.Top="137"
+                       Text="Password" />
+            <TextBlock Name="Phone"
+                       Canvas.Left="302"
+                       Canvas.Top="205"
+                       Text="Phone number" />
             <TextBlock Name="Address"
-                       Canvas.Left="258"
-                       Canvas.Top="215"
+                       Canvas.Left="302"
+                       Canvas.Top="234"
                        Text="Address" />
             <TextBlock Name="Email"
-                       Canvas.Left="258"
-                       Canvas.Top="236"
+                       Canvas.Left="302"
+                       Canvas.Top="259"
                        Text="Email" />
-            <TextBlock Name="FUll_name"
-                       Canvas.Left="259"
-                       Canvas.Top="131"
-                       Text="FUll Name" />
-            <TextBox Name="New_User_text"
-                     Canvas.Left="331"
-                     Canvas.Top="81"
+            <TextBox Name="fName_text"
+                     Canvas.Left="349"
+                     Canvas.Top="169"
+                     Width="64"
+                     Height="22"
+                     TextChanged="fName_text_TextChanged" />
+            <TextBox Name="address_text"
+                     Canvas.Left="371"
+                     Canvas.Top="225"
+                     Width="111"
+                     Height="22" />
+            <TextBox Name="email_text"
+                     Canvas.Left="371"
+                     Canvas.Top="252"
+                     Width="111"
+                     Height="22" />
+            <TextBox Name="ID_text"
+                     Canvas.Left="386"
+                     Canvas.Top="104"
                      Width="81"
                      Height="22" />
             <TextBox Name="New_Password_text"
-                     Canvas.Left="331"
-                     Canvas.Top="109"
+                     Canvas.Left="386"
+                     Canvas.Top="137"
                      Width="81"
                      Height="22" />
 
-            <TextBox Name="fName_text"
-                     Canvas.Left="331"
-                     Canvas.Top="131"
-                     Width="64"
-                     Height="22" />
-            <TextBox Name="ID_text"
-                     Canvas.Left="331"
-                     Canvas.Top="153"
-                     Width="81"
-                     Height="22" />
             <TextBox Name="phone_text"
-                     Canvas.Left="331"
-                     Canvas.Top="185"
-                     Width="81"
-                     Height="22" />
-            <TextBox Name="address_text"
-                     Canvas.Left="331"
-                     Canvas.Top="212"
-                     Width="81"
-                     Height="22" />
-            <TextBox Name="email_text"
-                     Canvas.Left="331"
-                     Canvas.Top="239"
+                     Canvas.Left="401"
+                     Canvas.Top="199"
                      Width="81"
                      Height="22" />
             <CheckBox Name="teacher"
-                      Canvas.Left="348"
-                      Canvas.Top="277"
+                      Canvas.Left="416"
+                      Canvas.Top="279"
                       Checked="teacher_Checked"
                       Content="Teacher?"
                       Unchecked="teacher_Unchecked" />
             <TextBox Name="lName_text"
-                     Canvas.Left="401"
-                     Canvas.Top="131"
+                     Canvas.Left="418"
+                     Canvas.Top="169"
                      Width="64"
                      Height="22" />
         </Canvas>

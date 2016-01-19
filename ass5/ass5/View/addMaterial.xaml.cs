@@ -68,5 +68,10 @@ namespace ass5.View
         {
             c.addNewAssigment(sFileName, "yarden", teacherLogin);
         }
+
+        private void title_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+
+        }
     }
 }

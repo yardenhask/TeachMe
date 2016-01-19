@@ -145,10 +145,7 @@ namespace ass5.Model
                     currcity = read["userAddress"].ToString();
                     if (currcity.Equals(city))
                     {
-                        bool teacher = false;
-                        if (read["isTeacher"].ToString().Equals("t"))
-                            teacher = true;
-                        ans.Add(new user(read["userFirstName"].ToString(), read["userLastName"].ToString(), read["userId"].ToString(), read["userPhoneNumber"].ToString(), read["userADDRESS"].ToString(), read["userPassword"].ToString(), read["userEmail"].ToString(), teacher));
+                        ans.Add(new user(read["userFirstName"].ToString(), read["userLastName"].ToString(), read["userId"].ToString(), read["userPhoneNumber"].ToString(), read["userADDRESS"].ToString(), read["userPassword"].ToString(), read["userEmail"].ToString(), true));
                     }
 
                 }

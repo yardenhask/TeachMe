@@ -3,34 +3,38 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Name="addM"
         Title="addMaterial"
-        Width="300"
-        Height="300">
+        Width="250"
+        Height="200">
     <Grid>
         <Canvas Name="canv">
             <Canvas.Background>
-                <LinearGradientBrush MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" EndPoint="0.5,1">
-                    <GradientStop Offset="1" Color="Black" />
-                    <GradientStop Color="White" />
-                </LinearGradientBrush>
+                <ImageBrush ImageSource="/ass5;component/pictures/background.png" Stretch="UniformToFill" />
             </Canvas.Background>
-            <Button Canvas.Left="135"
-                    Canvas.Top="149"
+            <Canvas Name="title"
+                    Canvas.Left="25"
+                    Width="200"
+                    Height="70"
+                    RenderTransformOrigin="0.753,0.86">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/TaddMaterial.png" />
+                </Canvas.Background>
+            </Canvas>
+            <Button Canvas.Left="120"
+                    Canvas.Top="50"
+                    Width="80"
+                    Height="50"
+                    Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/choose.png" />
+                </Button.Background>
+            </Button>
+            <Button Canvas.Left="145"
+                    Canvas.Top="120"
                     Width="80"
                     Height="50"
                     Click="Button_Click_1">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/ok.png" />
-                </Button.Background>
-            </Button>
-            <Button Canvas.Left="179"
-                    Canvas.Top="88"
-                    Width="80"
-                    Height="50"
-                    HorizontalAlignment="Left"
-                    VerticalAlignment="Top"
-                    Click="Button_Click">
-                <Button.Background>
-                    <ImageBrush ImageSource="/ass5;component/pictures/choose.png" />
                 </Button.Background>
             </Button>
         </Canvas>

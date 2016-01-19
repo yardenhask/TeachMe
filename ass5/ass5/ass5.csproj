@@ -86,6 +86,9 @@
     <Compile Include="View\Payments.xaml.cs">
       <DependentUpon>Payments.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\teacherManagement.xaml.cs">
+      <DependentUpon>teacherManagement.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Users.xaml.cs">
       <DependentUpon>Users.xaml</DependentUpon>
     </Compile>
@@ -120,6 +123,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Payments.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\teacherManagement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -164,6 +171,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>TeachMeDB.mdf</DependentUpon>
     </Content>
+    <Resource Include="pictures\welcome.png" />
+    <Resource Include="pictures\adduser.png" />
+    <Resource Include="pictures\login.png" />
+    <Resource Include="pictures\TaddMaterial.png" />
+    <Resource Include="pictures\searchCity.png" />
+    <Resource Include="pictures\searchName.png" />
+    <Resource Include="pictures\addR.png" />
+    <Resource Include="pictures\seeR.png" />
+    <Resource Include="pictures\addTeacher.png" />
     <Resource Include="pictures\paymentReq.png" />
     <Resource Include="pictures\TeachMeU.png" />
     <Resource Include="pictures\updateUser.png" />

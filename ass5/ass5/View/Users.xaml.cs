@@ -46,8 +46,9 @@ namespace ass5.View
         }
 
         private void Techer_Management_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("teacher managment opend");
+        {           
+            //MessageBox.Show("teacher managment opend");
+            teacherManagement tm = new teacherManagement(teacherLogin,c);
         }
     }
 }

@@ -2,40 +2,73 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Menu0"
-        Width="500"
-        Height="500">
+        Width="400"
+        Height="400">
     <Grid>
         <Canvas>
+            <Canvas.Background>
+                <ImageBrush ImageSource="/ass5;component/pictures/background.png" />
+            </Canvas.Background>
+
+            <Canvas Name="title"
+                    Canvas.Left="40"
+                    Canvas.Top="0"
+                    Width="320"
+                    Height="100">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/welcome.png" />
+                </Canvas.Background>
+            </Canvas>
             <Button Name="Users"
-                    Canvas.Left="100"
-                    Canvas.Top="100"
-                    Click="Users_Click"
-                    Content="Users management" />
+                    Canvas.Left="50"
+                    Canvas.Top="106"
+                    Width="140"
+                    Height="60"
+                    Click="Users_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/userManag.png" />
+                </Button.Background>
+            </Button>
             <Button Name="Matirials"
-                    Canvas.Left="100"
-                    Canvas.Top="125"
-                    Click="Matirials_Click"
-                    Content="Matirials management" />
-            <Button Name="Classes"
-                    Canvas.Left="100"
-                    Canvas.Top="150"
-                    Click="Classes_Click"
-                    Content="Class management" />
+                    Canvas.Left="50"
+                    Canvas.Top="210"
+                    Width="140"
+                    Height="60"
+                    Click="Matirials_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/materialManag.png" />
+                </Button.Background>
+            </Button>
             <Button Name="Payments"
-                    Canvas.Left="100"
-                    Canvas.Top="175"
-                    Click="Payments_Click"
-                    Content="Payments management" />
-            <TextBlock Name="Header"
-                       Canvas.Left="200"
-                       Canvas.Top="0"
-                       FontSize="40"
-                       Text="TeachMe" />
+                    Canvas.Left="220"
+                    Canvas.Top="106"
+                    Width="140"
+                    Height="60"
+                    Click="Payments_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/paymentManag.png" />
+                </Button.Background>
+            </Button>
+            <Button Name="Classes"
+                    Canvas.Left="220"
+                    Canvas.Top="210"
+                    Width="140"
+                    Height="60"
+                    Click="Classes_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/lessonManage.png" />
+                </Button.Background>
+            </Button>
             <Button Name="Exit"
-                    Canvas.Left="320"
-                    Canvas.Top="250"
-                    Click="Exit_Click"
-                    Content="Exit" />
+                    Canvas.Left="290"
+                    Canvas.Top="300"
+                    Width="70"
+                    Height="30"
+                    Click="Exit_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/exit.png" />
+                </Button.Background>
+            </Button>
         </Canvas>
     </Grid>
 </Window>

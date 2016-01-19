@@ -105,11 +105,7 @@ namespace ass5
                 MessageBox.Show("enter address");
                 flag1 = false;
             }
-            if (New_User_text.Text.Equals(""))
-            {
-                MessageBox.Show("enter address");
-                flag1 = false;
-            }
+           
             if (New_Password_text.Text.Equals(""))
             {
                 MessageBox.Show("enter address");
@@ -128,6 +124,11 @@ namespace ass5
         private void teacher_Unchecked(object sender, RoutedEventArgs e)
         {
             flag = false;
+        }
+
+        private void fName_text_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

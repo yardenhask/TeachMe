@@ -1,0 +1,50 @@
+﻿<Window x:Class="ass5.View.teacherManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="teacherManagement"
+        Width="500"
+        Height="500">
+    <Grid>
+        <Canvas>
+            <TextBlock Name="Header"
+                       Canvas.Left="50"
+                       Canvas.Top="0"
+                       FontSize="40"
+                       Text="teacher managements" />
+            <Button Name="searchByCity"
+                    Canvas.Left="100"
+                    Canvas.Top="100"
+                    Click="search_city_Click"
+                    Content="search city" />
+            <Button Name="addTeacher"
+                    Canvas.Left="100"
+                    Canvas.Top="125"
+                    Click="empty_Click"
+                    Content="addTeacher" />
+            <Button Name="seeRecommendations"
+                    Canvas.Left="100"
+                    Canvas.Top="150"
+                    Click="empty_Click"
+                    Content=" see reviews" />
+            <Button Name="writeRecommendations"
+                    Canvas.Left="100"
+                    Canvas.Top="180"
+                    Click="empty_Click"
+                    Content=" write review" />
+            <TextBox Name="search_Text"
+                     Canvas.Left="106"
+                     Canvas.Top="67"
+                     Width="81" />
+            <Button Name="searchByName"
+                    Canvas.Left="200"
+                    Canvas.Top="100"
+                    Click="empty_Click"
+                    Content="search name" />
+            <Button Name="Exit"
+                    Canvas.Left="320"
+                    Canvas.Top="250"
+                    Click="Exit_Click"
+                    Content="Exit" />
+        </Canvas>
+    </Grid>
+</Window>
