@@ -164,6 +164,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>TeachMeDB.mdf</DependentUpon>
     </Content>
+    <Resource Include="pictures\teachme.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

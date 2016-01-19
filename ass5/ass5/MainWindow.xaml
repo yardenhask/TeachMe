@@ -5,7 +5,14 @@
         Width="525"
         Height="350">
     <Grid>
-        <Canvas>
+        <Canvas RenderTransformOrigin="0.814,0.544">
+            <Canvas.Background>
+                <ImageBrush ImageSource="pictures/teachme.jpg" />
+            </Canvas.Background>
+            <Image Width="100" Height="100" />
+
+
+
             <Button Name="Exit"
                     Canvas.Left="21"
                     Canvas.Top="274"
@@ -18,6 +25,7 @@
             <TextBlock Canvas.Left="59"
                        Canvas.Top="108"
                        Text="Password" />
+
             <TextBox Name="username_text"
                      Canvas.Left="126"
                      Canvas.Top="87"
