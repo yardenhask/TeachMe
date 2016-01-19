@@ -89,7 +89,8 @@
                      Canvas.Left="190"
                      Canvas.Top="140"
                      Width="120"
-                     Height="25" />
+                     Height="25"
+                     Text="search word" />
         </Canvas>
     </Grid>
 </Window>

@@ -56,14 +56,14 @@ namespace ass5.View
                 l.Items.Add(i.toString());
             }
             canv.Children.Add(l);
-            Canvas.SetLeft(l, 50);
-            Canvas.SetTop(l, 150);
+            Canvas.SetLeft(l,190);
+            Canvas.SetTop(l, 170);
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
-            Menu0 main = new Menu0(teacherLogin, c);
-            main.Show();
+            Users u = new Users(teacherLogin, c);
+            u.Show();
             this.Close();
         }
     }

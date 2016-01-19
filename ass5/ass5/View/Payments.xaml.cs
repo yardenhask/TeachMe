@@ -27,6 +27,11 @@ namespace ass5.View
             InitializeComponent();
             teacherLogin = t;
             c = c1;
+            if (!c.teacher)
+            {
+                Payment_Request.IsEnabled = false;
+                Create_coupon.IsEnabled = false;
+            }
         }
         private void Exit_Click(object sender, RoutedEventArgs e)
         {

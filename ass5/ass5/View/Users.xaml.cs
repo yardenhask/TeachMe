@@ -50,6 +50,7 @@ namespace ass5.View
             //MessageBox.Show("teacher managment opend");
             teacherManagement tm = new teacherManagement(teacherLogin,c);
             tm.Show();
+            this.Close();
         }
     }
 }

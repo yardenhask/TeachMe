@@ -12,6 +12,7 @@ namespace ass5.Model
     {
         public controler c;
         public int MaterialCode;
+        public bool teacher;
 
         public model(controler controler)
         {
@@ -83,6 +84,7 @@ namespace ass5.Model
         public bool checkPassword(string username, string password)
         {
             bool ans = false;
+            teacher=false;
             string insert = @"SELECT * FROM [Users] WHERE [userId]=" + username;
             SqlConnection connect = getConnection();
             SqlCommand command = new SqlCommand(insert, connect);
@@ -93,7 +95,13 @@ namespace ass5.Model
                 read.Read();
                 string userP = read["userPassword"].ToString();
                 if (password.Equals(userP))
+                {
                     ans = true;
+                    string t = read["isTeacher"].ToString();
+                    if(t.Equals("t"))
+                        teacher=true;
+                }
+                    
             }
             catch (SqlException ex) { throw ex; }
             finally
@@ -107,18 +115,16 @@ namespace ass5.Model
         public bool addMaterial(string path, string user, string teacher)
         {
             bool ans = false;
-            string insert = "INSERT INTO[Material] ([mId],[teacherId],[studentId],[mPublishDate],[mGrade],[mDeadlineDate],[mURL],[mSolutionURL]) VALUES (@mId,@teacherId,@studentId,@mPublishDate,@mGrade,@mDeadlineDate,@mURL,@mSolutionURL)";
-
+            string insert = "INSERT INTO[Material] ([mId],[teacherId],[studentId],[mPublishDate],[mURL]) VALUES (@mId,@teacherId,@studentId,@mPublishDate,@mURL)";
+            string time = DateTime.Now.ToShortDateString();
             SqlConnection connect = getConnection();
             SqlCommand command = new SqlCommand(insert, connect);
             command.Parameters.AddWithValue("@mId", MaterialCode);
             command.Parameters.AddWithValue("@teacherId", teacher);
             command.Parameters.AddWithValue("@studentId", user);
-            command.Parameters.AddWithValue("@mPublishDate", DateTime.Now);
-            command.Parameters.AddWithValue("@mGrade", "");
-            command.Parameters.AddWithValue("@mDeadlineDate", "");
+            command.Parameters.AddWithValue("@mPublishDate",time);
             command.Parameters.AddWithValue("@mURL", path);
-            command.Parameters.AddWithValue("@mSolutionURLr", "");
+
             try
             {
                 connect.Open();
@@ -209,5 +215,38 @@ namespace ass5.Model
         }
 
 
+
+        public string findUserId(string user)
+        {
+            string id="";
+            string[] split = user.Split(' ');
+            string insert = @"SELECT * FROM [Users]" ;
+            SqlConnection connect = getConnection();
+            SqlCommand command = new SqlCommand(insert, connect);
+            try
+            {
+                connect.Open();
+                SqlDataReader read = command.ExecuteReader();
+                while (read.Read())
+                {
+                    string tmp = read["userFirstName"].ToString();
+                    if (split[0].Equals(tmp))
+                    {
+                        tmp = read["userLastName"].ToString();
+                        if (split[1].Equals(tmp))
+                            id = read["userId"].ToString();
+                    }
+                       
+                }
+
+                
+            }
+            catch (SqlException ex) { throw ex; }
+            finally
+            {
+                connect.Close();
+            }
+            return id;
+        }
     }
 }

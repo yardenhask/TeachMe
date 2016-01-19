@@ -27,7 +27,13 @@ namespace ass5.View
             InitializeComponent();
             teacherLogin = t;
             c = c1;
-
+            if (!c.teacher)
+            {
+                Open_Lesson.IsEnabled = false;
+                Add_Student.IsEnabled = false;
+                Close_Lesson.IsEnabled = false;
+                Delete_Lesson.IsEnabled = false;
+            }
         }
         private void Exit_Click(object sender, RoutedEventArgs e)
         {

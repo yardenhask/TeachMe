@@ -49,7 +49,7 @@ namespace ass5
             {
                 if (c.login(username_text.Text, Password_text.Text))
                 {
-
+                    c.teacher = c.m.teacher;
                     Menu0 main = new Menu0(username_text.Text.ToString(), c);
                     main.Show();
                     this.Close();

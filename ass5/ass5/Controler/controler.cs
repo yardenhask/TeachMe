@@ -11,9 +11,9 @@ namespace ass5.Controler
     {
         public model m;
         public MainWindow v;
-        //yarden
+        public bool teacher;
 
-        public controler() { }
+        public controler() { teacher = false; }
 
         public void setModel(model model) { m = model; }
         public void setView(MainWindow view) { v = view; }
@@ -31,9 +31,10 @@ namespace ass5.Controler
             return false;
         }
 
-        public bool addNewAssigment(string path, string user, string teacher)
+        public bool addNewMaterial(string path, string user, string teacher)
         {
-            return (m.addMaterial(path, user, teacher));
+           string id= m.findUserId(user);
+            return (m.addMaterial(path, id, teacher));
         }
 
         public List<user> searchTeacher(string city)

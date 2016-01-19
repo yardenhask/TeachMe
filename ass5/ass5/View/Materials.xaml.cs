@@ -27,6 +27,12 @@ namespace ass5.View
             InitializeComponent();
             c = c1;
             teacherLogin = t;
+            if (!c.teacher)
+            {
+                Add_Assigment.IsEnabled = false;
+                Add_Material.IsEnabled = false;
+
+            }
         }
         private void Exit_Click(object sender, RoutedEventArgs e)
         {

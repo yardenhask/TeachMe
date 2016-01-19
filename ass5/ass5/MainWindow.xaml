@@ -109,7 +109,7 @@
             <TextBlock Name="Address"
                        Canvas.Left="302"
                        Canvas.Top="234"
-                       Text="Address" />
+                       Text="City" />
             <TextBlock Name="Email"
                        Canvas.Left="302"
                        Canvas.Top="259"

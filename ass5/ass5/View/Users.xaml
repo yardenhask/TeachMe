@@ -9,17 +9,6 @@
             <Canvas.Background>
                 <ImageBrush ImageSource="/ass5;component/pictures/background.png" />
             </Canvas.Background>
-            <Button Name="Techer_Management"
-                    Canvas.Top="140"
-                    Canvas.Right="75"
-                    Width="140"
-                    Height="60"
-                    BorderThickness="0"
-                    Click="Techer_Management_Click">
-                <Button.Background>
-                    <ImageBrush ImageSource="/ass5;component/pictures/manageTeachers.png" />
-                </Button.Background>
-            </Button>
             <Canvas Name="title"
                     Canvas.Left="00"
                     Canvas.Top="0"
@@ -38,6 +27,17 @@
                     Click="Update_User_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/updateUser.png" />
+                </Button.Background>
+            </Button>
+            <Button Name="Techer_Management"
+                    Canvas.Left="75"
+                    Canvas.Top="140"
+                    Width="140"
+                    Height="60"
+                    BorderThickness="0"
+                    Click="Techer_Management_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/manageTeachers.png" />
                 </Button.Background>
             </Button>
             <Button Name="Delete_User"

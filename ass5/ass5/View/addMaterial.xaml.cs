@@ -35,24 +35,25 @@ namespace ass5.View
 
         string teacherLogin;
         controler c;
+        ComboBox studentsList;
         public addMaterial(string t, controler c)
         {
             this.c = c;
             InitializeComponent();
             teacherLogin = t;
             List<user> students = c.findStudents(t);
-            ComboBox studentsList = new ComboBox();
-            
+            studentsList = new ComboBox();
+            //studentsList.Name = "sl1";
             foreach (user u in students)
             {
                 Item i = new Item(u.fname, u.lname);
                 studentsList.Items.Add(i.toString());
             }
-            studentsList.Height=50;
+            studentsList.Height=25;
             studentsList.Width=100;
             addM.canv.Children.Add(studentsList);
-            
-            
+            Canvas.SetTop(studentsList, 80);
+            Canvas.SetLeft(studentsList,30);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -67,8 +68,10 @@ namespace ass5.View
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            c.addNewAssigment(sFileName, "yarden", teacherLogin);
+            string username = studentsList.SelectedItem.ToString();
+            c.addNewMaterial(sFileName, username, teacherLogin);
             MessageBox.Show("material added!");
+            this.Close();
         }
 
     }
