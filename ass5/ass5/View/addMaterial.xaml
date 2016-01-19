@@ -15,18 +15,24 @@
             </Canvas.Background>
             <Button Canvas.Left="135"
                     Canvas.Top="149"
-                    Width="43"
-                    Height="42"
-                    Click="Button_Click_1"
-                    Content="ok" />
+                    Width="80"
+                    Height="50"
+                    Click="Button_Click_1">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/ok.png" />
+                </Button.Background>
+            </Button>
             <Button Canvas.Left="179"
                     Canvas.Top="88"
-                    Width="41"
-                    Height="22"
+                    Width="80"
+                    Height="50"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Top"
-                    Click="Button_Click"
-                    Content="Button" />
+                    Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/choose.png" />
+                </Button.Background>
+            </Button>
         </Canvas>
 
     </Grid>

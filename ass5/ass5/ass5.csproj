@@ -164,6 +164,28 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>TeachMeDB.mdf</DependentUpon>
     </Content>
+    <Resource Include="pictures\paymentReq.png" />
+    <Resource Include="pictures\TeachMeU.png" />
+    <Resource Include="pictures\updateUser.png" />
+    <Resource Include="pictures\userManag.png" />
+    <Resource Include="pictures\תמונה1.png" />
+    <Resource Include="pictures\manageTeachers.png" />
+    <Resource Include="pictures\materialManag.png" />
+    <Resource Include="pictures\ok.png" />
+    <Resource Include="pictures\openLesson.png" />
+    <Resource Include="pictures\paymantTrans.png" />
+    <Resource Include="pictures\paymentManag.png" />
+    <Resource Include="pictures\coupon.png" />
+    <Resource Include="pictures\deleteLesson.png" />
+    <Resource Include="pictures\deleteMaterial.png" />
+    <Resource Include="pictures\deleteUser.png" />
+    <Resource Include="pictures\exit.png" />
+    <Resource Include="pictures\lessonManage.png" />
+    <Resource Include="pictures\addAssigment.png" />
+    <Resource Include="pictures\addMaterial.png" />
+    <Resource Include="pictures\addSolution.png" />
+    <Resource Include="pictures\addstudent.png" />
+    <Resource Include="pictures\choose.png" />
     <Resource Include="pictures\background.png" />
     <Resource Include="pictures\teachme.jpg" />
   </ItemGroup>
