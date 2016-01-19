@@ -26,6 +26,7 @@
                     Canvas.Top="80"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Payment_Request_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/paymentReq.png" />
@@ -36,6 +37,7 @@
                     Canvas.Top="150"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Pay_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/paymantTrans.png" />
@@ -46,6 +48,7 @@
                     Canvas.Top="225"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Create_coupon_Click"
                     RenderTransformOrigin="0.491,0.169">
                 <Button.Background>
@@ -57,6 +60,7 @@
                     Canvas.Top="299"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Exit_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/exit.png" />

@@ -25,6 +25,7 @@
                     Canvas.Top="70"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Add_Assigment_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/addAssigment.png" />
@@ -35,6 +36,7 @@
                     Canvas.Top="140"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Add_Solution_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/addSolution.png" />
@@ -45,6 +47,7 @@
                     Canvas.Top="210"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Add_Material_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/addMaterial.png" />
@@ -55,6 +58,7 @@
                     Canvas.Top="280"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Retrieval_Material_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/openFile.png" />
@@ -65,6 +69,7 @@
                     Canvas.Top="345"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Delete_Material_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/deleteMaterial.png" />
@@ -75,6 +80,7 @@
                     Canvas.Top="419"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Exit_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/exit.png" />

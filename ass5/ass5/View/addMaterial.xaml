@@ -23,6 +23,7 @@
                     Canvas.Top="70"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Button_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/choose.png" />
@@ -32,6 +33,7 @@
                     Canvas.Top="153"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Button_Click_1">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/ok.png" />

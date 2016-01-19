@@ -36,6 +36,7 @@
                     Canvas.Top="276"
                     Width="70"
                     Height="30"
+                    BorderThickness="0"
                     Click="Exit_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="pictures/exit.png" />
@@ -71,6 +72,7 @@
                     Canvas.Top="193"
                     Width="70"
                     Height="30"
+                    BorderThickness="0"
                     Click="Log_In_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="pictures/login.png" />
@@ -82,6 +84,7 @@
                     Canvas.Top="260"
                     Width="90"
                     Height="40"
+                    BorderThickness="0"
                     Click="Add_User_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="pictures/adduser.png" />

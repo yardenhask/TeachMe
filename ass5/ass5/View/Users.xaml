@@ -14,6 +14,7 @@
                     Canvas.Right="75"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Techer_Management_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/manageTeachers.png" />
@@ -33,6 +34,7 @@
                     Canvas.Top="70"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Update_User_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/updateUser.png" />
@@ -43,6 +45,7 @@
                     Canvas.Top="215"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Delete_User_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/deleteUser.png" />
@@ -53,6 +56,7 @@
                     Canvas.Top="299"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Exit_Click"
                     RenderTransformOrigin="0.02,1.014">
                 <Button.Background>

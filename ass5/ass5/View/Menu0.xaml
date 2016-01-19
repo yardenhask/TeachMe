@@ -24,6 +24,7 @@
                     Canvas.Top="106"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Users_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/userManag.png" />
@@ -34,6 +35,7 @@
                     Canvas.Top="210"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Matirials_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/materialManag.png" />
@@ -44,6 +46,7 @@
                     Canvas.Top="106"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Payments_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/paymentManag.png" />
@@ -54,6 +57,7 @@
                     Canvas.Top="210"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Classes_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/lessonManage.png" />
@@ -64,6 +68,7 @@
                     Canvas.Top="300"
                     Width="70"
                     Height="30"
+                    BorderThickness="0"
                     Click="Exit_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/exit.png" />

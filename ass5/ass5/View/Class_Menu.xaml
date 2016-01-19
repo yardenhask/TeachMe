@@ -25,6 +25,7 @@
                     Canvas.Top="399"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Exit_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/exit.png" />
@@ -35,6 +36,7 @@
                     Canvas.Top="65"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Open_Lesson_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/openLesson.png" />
@@ -45,6 +47,7 @@
                     Canvas.Top="125"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Add_Student_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/addstudent.png" />
@@ -55,6 +58,7 @@
                     Canvas.Top="185"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Close_Lesson_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/closelesson.png" />
@@ -65,6 +69,7 @@
                     Canvas.Top="247"
                     Width="140"
                     Height="60"
+                    BorderThickness="0"
                     Click="Delete_Lesson_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/ass5;component/pictures/deleteLesson.png" />

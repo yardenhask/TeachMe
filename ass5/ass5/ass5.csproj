@@ -86,9 +86,6 @@
     <Compile Include="View\Payments.xaml.cs">
       <DependentUpon>Payments.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\searchResult.xaml.cs">
-      <DependentUpon>searchResult.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\teacherManagement.xaml.cs">
       <DependentUpon>teacherManagement.xaml</DependentUpon>
     </Compile>
@@ -126,10 +123,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Payments.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\searchResult.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

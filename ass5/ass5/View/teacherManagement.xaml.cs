@@ -20,6 +20,17 @@ namespace ass5.View
     /// </summary>
     public partial class teacherManagement : Window
     {
+        private class Item
+        {
+            public string first;
+            public string last;
+            public Item(string f, string l)
+            {
+                first = f; last = l;
+            }
+            public string toString() { return first + " " + last; }
+        }
+
         controler c;
         string teacherLogin;
         public teacherManagement(string t, controler c1)
@@ -38,6 +49,15 @@ namespace ass5.View
         {
             List<user> teachers= c.searchTeacher(search_Text.Text);
             //add to canvas
+            ListBox l = new ListBox();
+            foreach (user s in teachers)
+            {
+                Item i = new Item(s.fname, s.lname);
+                l.Items.Add(i.toString());
+            }
+            canv.Children.Add(l);
+            Canvas.SetLeft(l, 50);
+            Canvas.SetTop(l, 150);
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)

@@ -112,7 +112,10 @@ namespace ass5
                 flag1 = false;
             }
             if (flag1)
+            {
                 c.addNewUser(fName_text.Text, lName_text.Text, ID_text.Text, phone_text.Text, address_text.Text, New_Password_text.Text, email_text.Text, flag);
+                MessageBox.Show("user was added");
+            }
 
         }
 
