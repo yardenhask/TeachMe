@@ -132,7 +132,7 @@ namespace ass5.Model
         public List<user> searchByCity(string city)
         {
             List<user> ans = new List<user>();
-            string insert = @"SELECT * FROM [Users] WHERE [isTeacher]=t AND [userAddress]=" + city;
+            string insert = @"SELECT * FROM [Users] WHERE [isTeacher]='t' AND [userAddress]='" + city+"'";
             SqlConnection connect = getConnection();
             SqlCommand command = new SqlCommand(insert, connect);
             try
