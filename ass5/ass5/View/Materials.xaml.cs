@@ -37,8 +37,7 @@ namespace ass5.View
 
         private void Add_Assigment_Click(object sender, RoutedEventArgs e)
         {
-            addMaterial add = new addMaterial(teacherLogin, c);
-            add.Show();
+            MessageBox.Show("add assigment");
         }
 
         private void Add_Solution_Click(object sender, RoutedEventArgs e)
@@ -48,7 +47,9 @@ namespace ass5.View
 
         private void Add_Material_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("add metirial");
+            addMaterial add = new addMaterial(teacherLogin, c);
+            add.Show();
+            
         }
 
         private void Retrieval_Material_Click(object sender, RoutedEventArgs e)

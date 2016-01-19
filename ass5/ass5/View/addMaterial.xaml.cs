@@ -42,6 +42,7 @@ namespace ass5.View
             teacherLogin = t;
             List<user> students = c.findStudents(t);
             ComboBox studentsList = new ComboBox();
+            
             foreach (user u in students)
             {
                 Item i = new Item(u.fname, u.lname);
@@ -67,11 +68,8 @@ namespace ass5.View
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             c.addNewAssigment(sFileName, "yarden", teacherLogin);
+            MessageBox.Show("material added!");
         }
 
-        private void title_SizeChanged(object sender, SizeChangedEventArgs e)
-        {
-
-        }
     }
 }

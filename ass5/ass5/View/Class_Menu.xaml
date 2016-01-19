@@ -6,41 +6,80 @@
         Height="500">
     <Grid>
         <Canvas>
-            <Button Name="Open_Lesson"
-                    Canvas.Left="100"
-                    Canvas.Top="100"
-                    Click="Open_Lesson_Click"
-                    Content="Open Lesson" />
-            <Button Name="Add_Student"
-                    Canvas.Left="100"
-                    Canvas.Top="125"
-                    Click="Add_Student_Click"
-                    Content="Add Student" />
-            <Button Name="Delete_Lesson"
-                    Canvas.Left="100"
-                    Canvas.Top="150"
-                    Click="Delete_Lesson_Click"
-                    Content="Delete Lesson" />
-            <Button Name="OnLine_Lesson"
-                    Canvas.Left="100"
-                    Canvas.Top="175"
-                    Click="OnLine_Lesson_Click"
-                    Content="Online Lesson" />
-            <Button Name="Close_Lesson"
-                    Canvas.Left="100"
-                    Canvas.Top="200"
-                    Click="Close_Lesson_Click"
-                    Content="Close Lesson" />
-            <TextBlock Name="Header"
-                       Canvas.Left="200"
-                       Canvas.Top="0"
-                       FontSize="40"
-                       Text="TeachMe" />
+            <Canvas.Background>
+                <ImageBrush ImageSource="/ass5;component/pictures/background.png" />
+            </Canvas.Background>
+
+            <Canvas Name="right"
+                    Canvas.Top="70"
+                    Canvas.Right="20"
+                    Width="280"
+                    Height="350">
+                <Canvas.Background>
+                    <SolidColorBrush Opacity="0.2" Color="#FF7A0620" />
+                </Canvas.Background>
+
+            </Canvas>
             <Button Name="Exit"
-                    Canvas.Left="320"
-                    Canvas.Top="250"
-                    Click="Exit_Click"
-                    Content="Exit" />
+                    Canvas.Left="10"
+                    Canvas.Top="399"
+                    Width="140"
+                    Height="60"
+                    Click="Exit_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/exit.png" />
+                </Button.Background>
+            </Button>
+            <Button Name="Open_Lesson"
+                    Canvas.Left="30"
+                    Canvas.Top="65"
+                    Width="140"
+                    Height="60"
+                    Click="Open_Lesson_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/openLesson.png" />
+                </Button.Background>
+            </Button>
+            <Button Name="Add_Student"
+                    Canvas.Left="30"
+                    Canvas.Top="125"
+                    Width="140"
+                    Height="60"
+                    Click="Add_Student_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/addstudent.png" />
+                </Button.Background>
+            </Button>
+            <Button Name="Close_Lesson"
+                    Canvas.Left="30"
+                    Canvas.Top="185"
+                    Width="140"
+                    Height="60"
+                    Click="Close_Lesson_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/closelesson.png" />
+                </Button.Background>
+            </Button>
+            <Button Name="Delete_Lesson"
+                    Canvas.Left="30"
+                    Canvas.Top="247"
+                    Width="140"
+                    Height="60"
+                    Click="Delete_Lesson_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/deleteLesson.png" />
+                </Button.Background>
+            </Button>
+            <Canvas Name="title"
+                    Canvas.Left="90"
+                    Canvas.Top="0"
+                    Width="300"
+                    Height="60">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/tlesson.png" />
+                </Canvas.Background>
+            </Canvas>
+
         </Canvas>
     </Grid>
 </Window>

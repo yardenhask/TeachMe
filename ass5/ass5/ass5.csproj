@@ -86,6 +86,9 @@
     <Compile Include="View\Payments.xaml.cs">
       <DependentUpon>Payments.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\searchResult.xaml.cs">
+      <DependentUpon>searchResult.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\teacherManagement.xaml.cs">
       <DependentUpon>teacherManagement.xaml</DependentUpon>
     </Compile>
@@ -123,6 +126,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Payments.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\searchResult.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -171,6 +178,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>TeachMeDB.mdf</DependentUpon>
     </Content>
+    <Resource Include="pictures\tmanagteachers.png" />
+    <Resource Include="pictures\closelesson.png" />
+    <Resource Include="pictures\tlesson.png" />
+    <Resource Include="pictures\openFile.png" />
+    <Resource Include="pictures\tMaterials.png" />
+    <Resource Include="pictures\tPayments.png" />
+    <Resource Include="pictures\tuserManag.png" />
     <Resource Include="pictures\welcome.png" />
     <Resource Include="pictures\adduser.png" />
     <Resource Include="pictures\login.png" />

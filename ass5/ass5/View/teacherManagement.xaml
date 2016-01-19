@@ -6,45 +6,93 @@
         Height="500">
     <Grid>
         <Canvas>
-            <TextBlock Name="Header"
-                       Canvas.Left="50"
-                       Canvas.Top="0"
-                       FontSize="40"
-                       Text="teacher managements" />
-            <Button Name="searchByCity"
-                    Canvas.Left="100"
-                    Canvas.Top="100"
-                    Click="search_city_Click"
-                    Content="search city" />
-            <Button Name="addTeacher"
-                    Canvas.Left="100"
-                    Canvas.Top="125"
-                    Click="empty_Click"
-                    Content="addTeacher" />
-            <Button Name="seeRecommendations"
-                    Canvas.Left="100"
-                    Canvas.Top="150"
-                    Click="empty_Click"
-                    Content=" see reviews" />
-            <Button Name="writeRecommendations"
-                    Canvas.Left="100"
-                    Canvas.Top="180"
-                    Click="empty_Click"
-                    Content=" write review" />
+            <Canvas.Background>
+                <ImageBrush ImageSource="/ass5;component/pictures/background.png" />
+            </Canvas.Background>
+            <Canvas Name="right"
+                    Canvas.Top="70"
+                    Canvas.Right="20"
+                    Width="280"
+                    Height="300">
+                <Canvas.Background>
+                    <SolidColorBrush Opacity="0.2" Color="#FF7A0620" />
+                </Canvas.Background>
+
+            </Canvas>
             <TextBox Name="search_Text"
-                     Canvas.Left="106"
-                     Canvas.Top="67"
-                     Width="81" />
+                     Canvas.Left="30"
+                     Canvas.Top="75"
+                     Width="100" />
+            <Button Name="searchByCity"
+                    Canvas.Left="30"
+                    Canvas.Top="105"
+                    Width="140"
+                    Height="60"
+                    Click="search_city_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/searchCity.png" />
+                </Button.Background>
+            </Button>
             <Button Name="searchByName"
-                    Canvas.Left="200"
-                    Canvas.Top="100"
-                    Click="empty_Click"
-                    Content="search name" />
+                    Canvas.Left="30"
+                    Canvas.Top="170"
+                    Width="140"
+                    Height="60"
+                    Click="empty_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/searchName.png" />
+                </Button.Background>
+            </Button>
+            <Button Name="addTeacher"
+                    Canvas.Left="30"
+                    Canvas.Top="235"
+                    Width="140"
+                    Height="60"
+                    Click="empty_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/addTeacher.png" />
+                </Button.Background>
+            </Button>
+            <Button Name="writeRecommendations"
+                    Canvas.Left="30"
+                    Canvas.Top="300"
+                    Width="140"
+                    Height="60"
+                    Click="empty_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/addR.png" />
+                </Button.Background>
+            </Button>
+            <Button Name="seeRecommendations"
+                    Canvas.Left="30"
+                    Canvas.Top="367"
+                    Width="140"
+                    Height="60"
+                    Click="empty_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/seeR.png" />
+                </Button.Background>
+            </Button>
+            <Canvas Name="title"
+                    Canvas.Left="90"
+                    Canvas.Top="0"
+                    Width="300"
+                    Height="60">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/tmanagteachers.png" />
+                </Canvas.Background>
+            </Canvas>
+
             <Button Name="Exit"
-                    Canvas.Left="320"
-                    Canvas.Top="250"
-                    Click="Exit_Click"
-                    Content="Exit" />
+                    Canvas.Left="342"
+                    Canvas.Top="399"
+                    Width="140"
+                    Height="60"
+                    Click="Exit_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/ass5;component/pictures/exit.png" />
+                </Button.Background>
+            </Button>
         </Canvas>
     </Grid>
 </Window>
