@@ -30,6 +30,7 @@ namespace ass5.View
             {
                 first = f; last = l;
             }
+            public string toString() { return first + " " + last;  }
         }
 
         string teacherLogin;
@@ -39,11 +40,17 @@ namespace ass5.View
             InitializeComponent();
             teacherLogin = t;
             List<user> students = c.findStudents(t);
-            studentsList = new ComboBox();
+            ComboBox studentsList = new ComboBox();
             foreach (user u in students)
             {
-                studentsList.Items.Add(new Item(u.fname, u.lname));
+                Item i = new Item(u.fname, u.lname);
+                studentsList.Items.Add(i.toString());
             }
+            studentsList.Height=50;
+            studentsList.Width=100;
+            addM.canv.Children.Add(studentsList);
+            
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -53,8 +60,12 @@ namespace ass5.View
             if (f.ShowDialog() == true)
             {
                 sFileName = f.FileName;
-         //       c.addNewAssigment(sFileName, "yarden", teacherLogin); button upload
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            c.addNewAssigment(sFileName, "yarden", teacherLogin);
         }
     }
 }

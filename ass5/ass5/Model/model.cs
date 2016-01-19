@@ -49,7 +49,7 @@ namespace ass5.Model
 
         public static SqlConnection getConnection()
         {
-            string connect = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\ירדן\Desktop\לימודים\שנה ג\סמס 1\ניתוץ\ass5\ass5\Model\Database\TeachMe.mdf;Integrated Security=True";
+            string connect = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\ירדן\Documents\GitHub\TeachMe\ass5\ass5\Model\Database\TeachMeDB.mdf;Integrated Security=True";
             SqlConnection data = new SqlConnection(connect);
             return data;
         }
