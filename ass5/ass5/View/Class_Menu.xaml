@@ -1,0 +1,46 @@
+﻿<Window x:Class="ass5.View.Class_Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Materials"
+        Width="500"
+        Height="500">
+    <Grid>
+        <Canvas>
+            <Button Name="Open_Lesson"
+                    Canvas.Left="100"
+                    Canvas.Top="100"
+                    Click="Open_Lesson_Click"
+                    Content="Open Lesson" />
+            <Button Name="Add_Student"
+                    Canvas.Left="100"
+                    Canvas.Top="125"
+                    Click="Add_Student_Click"
+                    Content="Add Student" />
+            <Button Name="Delete_Lesson"
+                    Canvas.Left="100"
+                    Canvas.Top="150"
+                    Click="Delete_Lesson_Click"
+                    Content="Delete Lesson" />
+            <Button Name="OnLine_Lesson"
+                    Canvas.Left="100"
+                    Canvas.Top="175"
+                    Click="OnLine_Lesson_Click"
+                    Content="Online Lesson" />
+            <Button Name="Close_Lesson"
+                    Canvas.Left="100"
+                    Canvas.Top="200"
+                    Click="Close_Lesson_Click"
+                    Content="Close Lesson" />
+            <TextBlock Name="Header"
+                       Canvas.Left="200"
+                       Canvas.Top="0"
+                       FontSize="40"
+                       Text="TeachMe" />
+            <Button Name="Exit"
+                    Canvas.Left="320"
+                    Canvas.Top="250"
+                    Click="Exit_Click"
+                    Content="Exit" />
+        </Canvas>
+    </Grid>
+</Window>

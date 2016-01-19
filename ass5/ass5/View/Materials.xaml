@@ -1,0 +1,46 @@
+﻿<Window x:Class="ass5.View.Materials"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Materials"
+        Width="500"
+        Height="500">
+    <Grid>
+        <Canvas>
+            <Button Name="Add_Assigment"
+                    Canvas.Left="100"
+                    Canvas.Top="100"
+                    Click="Add_Assigment_Click"
+                    Content="Add Assigment" />
+            <Button Name="Add_Solution"
+                    Canvas.Left="100"
+                    Canvas.Top="125"
+                    Click="Add_Solution_Click"
+                    Content="Add Solution" />
+            <Button Name="Add_Material"
+                    Canvas.Left="100"
+                    Canvas.Top="150"
+                    Click="Add_Material_Click"
+                    Content="Add Material" />
+            <Button Name="Retrieval_Material"
+                    Canvas.Left="100"
+                    Canvas.Top="175"
+                    Click="Retrieval_Material_Click"
+                    Content="Retrieval Material" />
+            <Button Name="Delete_Material"
+                    Canvas.Left="100"
+                    Canvas.Top="200"
+                    Click="Delete_Material_Click"
+                    Content="Delete Material" />
+            <TextBlock Name="Header"
+                       Canvas.Left="200"
+                       Canvas.Top="0"
+                       FontSize="40"
+                       Text="TeachMe" />
+            <Button Name="Exit"
+                    Canvas.Left="320"
+                    Canvas.Top="250"
+                    Click="Exit_Click"
+                    Content="Exit" />
+        </Canvas>
+    </Grid>
+</Window>

@@ -1,0 +1,36 @@
+﻿<Window x:Class="ass5.View.Users"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Materials"
+        Width="500"
+        Height="500">
+    <Grid>
+        <Canvas>
+            <Button Name="Update_User"
+                    Canvas.Left="100"
+                    Canvas.Top="100"
+                    Click="Update_User_Click"
+                    Content="Update User" />
+            <Button Name="Delete_User"
+                    Canvas.Left="100"
+                    Canvas.Top="125"
+                    Click="Delete_User_Click"
+                    Content="Delete User" />
+            <Button Name="Techer_Management"
+                    Canvas.Left="100"
+                    Canvas.Top="150"
+                    Click="Techer_Management_Click"
+                    Content="Teacher Management" />
+            <TextBlock Name="Header"
+                       Canvas.Left="200"
+                       Canvas.Top="0"
+                       FontSize="40"
+                       Text="TeachMe" />
+            <Button Name="Exit"
+                    Canvas.Left="320"
+                    Canvas.Top="250"
+                    Click="Exit_Click"
+                    Content="Exit" />
+        </Canvas>
+    </Grid>
+</Window>

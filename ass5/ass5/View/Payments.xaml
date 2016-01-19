@@ -1,0 +1,36 @@
+﻿<Window x:Class="ass5.View.Payments"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Materials"
+        Width="500"
+        Height="500">
+    <Grid>
+        <Canvas>
+            <Button Name="Payment_Request"
+                    Canvas.Left="100"
+                    Canvas.Top="100"
+                    Click="Payment_Request_Click"
+                    Content="Payment Request" />
+            <Button Name="Pay"
+                    Canvas.Left="100"
+                    Canvas.Top="125"
+                    Click="Pay_Click"
+                    Content="Pay" />
+            <Button Name="Create_coupon"
+                    Canvas.Left="100"
+                    Canvas.Top="150"
+                    Click="Create_coupon_Click"
+                    Content="Create_a_coupon" />
+            <TextBlock Name="Header"
+                       Canvas.Left="200"
+                       Canvas.Top="0"
+                       FontSize="40"
+                       Text="TeachMe" />
+            <Button Name="Exit"
+                    Canvas.Left="320"
+                    Canvas.Top="250"
+                    Click="Exit_Click"
+                    Content="Exit" />
+        </Canvas>
+    </Grid>
+</Window>

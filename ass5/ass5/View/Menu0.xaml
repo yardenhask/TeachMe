@@ -1,0 +1,41 @@
+﻿<Window x:Class="ass5.View.Menu0"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menu0"
+        Width="500"
+        Height="500">
+    <Grid>
+        <Canvas>
+            <Button Name="Users"
+                    Canvas.Left="100"
+                    Canvas.Top="100"
+                    Click="Users_Click"
+                    Content="Users management" />
+            <Button Name="Matirials"
+                    Canvas.Left="100"
+                    Canvas.Top="125"
+                    Click="Matirials_Click"
+                    Content="Matirials management" />
+            <Button Name="Classes"
+                    Canvas.Left="100"
+                    Canvas.Top="150"
+                    Click="Classes_Click"
+                    Content="Class management" />
+            <Button Name="Payments"
+                    Canvas.Left="100"
+                    Canvas.Top="175"
+                    Click="Payments_Click"
+                    Content="Payments management" />
+            <TextBlock Name="Header"
+                       Canvas.Left="200"
+                       Canvas.Top="0"
+                       FontSize="40"
+                       Text="TeachMe" />
+            <Button Name="Exit"
+                    Canvas.Left="320"
+                    Canvas.Top="250"
+                    Click="Exit_Click"
+                    Content="Exit" />
+        </Canvas>
+    </Grid>
+</Window>
